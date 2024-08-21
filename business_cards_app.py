@@ -31,7 +31,17 @@ def calcular_costo_final(unidades):
 # Interfaz de usuario con Streamlit
 st.title("Calculadora de Costo para Business Cards")
 st.write("Agencia de Marketing Digital: Inzings")
-st.write("Mensaje: Gracias por preferirnos! Aquí está el detalle de su presupuesto para las Business cards que desea. Tenga en cuenta que este precio incluye: diseño, impresión y envío por correo postal hasta su dirección.")
+
+# Aquí añadimos la frase con el resaltado en naranja
+st.markdown(
+    """
+    **Mensaje:** Gracias por preferirnos! Aquí está el detalle de su presupuesto para las Business cards que desea.
+    <span style="background-color: #fb8500; color: white; padding: 5px; border-radius: 5px;">
+    Tenga en cuenta que este precio incluye: diseño, impresión y envío por correo postal hasta su dirección.
+    </span>
+    """,
+    unsafe_allow_html=True
+)
 
 # Selección de la cantidad de unidades
 unidades = st.selectbox("Seleccione la cantidad de unidades", [
