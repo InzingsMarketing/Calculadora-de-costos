@@ -30,7 +30,7 @@ def calcular_costo_final(unidades):
 
 # Interfaz de usuario con Streamlit
 st.title("Calculadora de Costo para Business Cards")
-st.write("Agencia de Marketing Digital: Inzings")
+st.write("Inzings - Agencia de Marketing Digital")
 
 # Aquí añadimos la frase con el resaltado en naranja y letras negras
 st.markdown(
