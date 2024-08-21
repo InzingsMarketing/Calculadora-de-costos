@@ -32,11 +32,11 @@ def calcular_costo_final(unidades):
 st.title("Calculadora de Costo para Business Cards")
 st.write("Agencia de Marketing Digital: Inzings")
 
-# Aquí añadimos la frase con el resaltado en naranja
+# Aquí añadimos la frase con el resaltado en naranja y letras negras
 st.markdown(
     """
     **Mensaje:** Gracias por preferirnos! Aquí está el detalle de su presupuesto para las Business cards que desea.
-    <span style="background-color: #fb8500; color: white; padding: 5px; border-radius: 5px;">
+    <span style="background-color: #fb8500; color: black; padding: 5px; border-radius: 5px;">
     Tenga en cuenta que este precio incluye: diseño, impresión y envío por correo postal hasta su dirección.
     </span>
     """,
